@@ -1,0 +1,21 @@
+# Render Blueprint for DPP Enterprise
+services:
+  - type: web
+    name: dpp-enterprise
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements_final.txt
+    startCommand: python dpp_final.py
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ENV
+        value: production
+      - key: PORT
+        value: 8000
