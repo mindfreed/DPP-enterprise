@@ -52,10 +52,7 @@ API_KEY = os.getenv("API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 REQUEST_ID_HEADER = "X-Request-ID"
-
 # In-memory metrics (use Redis for production)
-class Metrics:
-
 class Metrics:
     def __init__(self):
         self.requests_total = 0
