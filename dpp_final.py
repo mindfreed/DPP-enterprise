@@ -47,16 +47,15 @@ load_dotenv()
 # ============================================================================
 
 API_VERSION = "v1"
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./dpp_enterprise.db")
+DATABASE_URL = os.getenv("DATABASE_URL")
 API_KEY = os.getenv("API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 REQUEST_ID_HEADER = "X-Request-ID"
-REQUEST_ID_HEADER = "X-Request-ID"
 
+# In-memory metrics (use Redis for production)
+class Metrics:
 
-
-# In-memory metrics (use Redis/Prometheus in real production)
 class Metrics:
     def __init__(self):
         self.requests_total = 0
