@@ -52,11 +52,8 @@ API_KEY = os.getenv("API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 REQUEST_ID_HEADER = "X-Request-ID"
-if not API_KEY:
-    raise ValueError("API_KEY environment
-if not API_KEY:
-    print("No API_KEY found, continuing without")
-if not OPENAI
+REQUEST
+
 
 
 # In-memory metrics (use Redis/Prometheus in real production)
