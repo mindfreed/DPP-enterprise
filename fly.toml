@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for dpp-enterprise-wrco2g on 2026-01-03T09:46:05Z
+# fly.toml app configuration file generated for dpp-enterprise-2nn3ug on 2026-01-03T10:41:16Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'dpp-enterprise-wrco2g'
+app = 'dpp-enterprise-2nn3ug'
 primary_region = 'sjc'
 
 [build]
